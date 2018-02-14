@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 전체 레이아웃 -->
+    <FrameLayout
+        android:id="@+id/fl_fragment_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="80dp"
+        android:background="#00000000">
+        <!-- android:background="#77000000" -->
+
+        <ImageView
+            android:id="@+id/blankFrame1"
+            android:layout_width="500dp"
+            android:layout_height="360dp"
+            android:layout_gravity="left|top"
+            android:layerType="software"
+            android:src="@drawable/rectangle" />
+
+        <!-- 1번째 프레임 레이아웃 -->
+        <FrameLayout
+            android:id="@+id/framelayout_1"
+            android:layout_width="500dp"
+            android:layout_height="360dp"
+            android:layout_gravity="left|top"
+            android:visibility="invisible">
+
+            <Button
+                android:id="@+id/button_frameOff_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="5dp"
+                android:background="#00ff0000"
+                android:gravity="right|top"
+                android:text="X"
+                android:visibility="invisible" />
+
+            <!-- 위젯1 -->
+            <FrameLayout
+                android:id="@+id/framelayout_widget1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible">
+
+                <!--
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="widget1"
+                    android:textSize="30dp" />
+                -->
+
+                <ImageView
+                    android:id="@+id/widget1_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/rectangle" />
+
+                <!-- 뉴트로필 값 -->
+                <AbsoluteLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/value_neutrophil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_x="34dp"
+                        android:layout_y="101dp"
+                        android:text="0000"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+                </AbsoluteLayout>
+
+            </FrameLayout>
+            <!-- 위젯1 끝 -->
+
+            <!-- 위젯2 -->
+            <FrameLayout
+                android:id="@+id/framelayout_widget2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="widget2"
+                    android:textSize="30dp" />
+
+
+            </FrameLayout>
+            <!-- 위젯2 끝 -->
+
+        </FrameLayout>
+        <!-- 1번째 프레임 레이아웃 끝 -->
+
+        <ImageView
+            android:id="@+id/blankFrame2"
+            android:layout_width="500dp"
+            android:layout_height="360dp"
+            android:layout_gravity="left|bottom"
+            android:layerType="software"
+            android:src="@drawable/rectangle" />
+
+        <!-- 2번째 프레임 레이아웃 -->
+        <FrameLayout
+            android:id="@+id/framelayout_2"
+            android:layout_width="500dp"
+            android:layout_height="360dp"
+            android:layout_gravity="left|bottom"
+            android:visibility="invisible">
+
+            <Button
+                android:id="@+id/button_frameOff_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="5dp"
+                android:background="#00ff0000"
+                android:gravity="right|top"
+                android:text="X"
+                android:visibility="invisible" />
+
+            <!-- 위젯3 -->
+            <FrameLayout
+                android:id="@+id/framelayout_widget3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/widget3_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/rectangle" />
+
+                <!-- 환자 이름 값 -->
+                <AbsoluteLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/value_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_x="257dp"
+                        android:layout_y="256dp"
+                        android:background="#fff"
+                        android:text="가나다"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+                </AbsoluteLayout>
+
+            </FrameLayout>
+            <!-- 위젯3 끝 -->
+
+            <!-- 위젯4 -->
+            <FrameLayout
+                android:id="@+id/framelayout_widget4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="widget4"
+                    android:textSize="30dp" />
+            </FrameLayout>
+            <!-- 위젯4 끝 -->
+
+        </FrameLayout>
+        <!-- 2번째 프레임 레이아웃 끝 -->
+
+        <!--
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="50dp" />
+            -->
+
+        <FrameLayout
+            android:id="@+id/framelayout_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imageview_person"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/human2" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/blankFrame3"
+            android:layout_width="500dp"
+            android:layout_height="360dp"
+            android:layout_gravity="right|top"
+            android:layerType="software"
+            android:src="@drawable/rectangle" />
+
+        <!-- 3번째 프레임 레이아웃 -->
+        <FrameLayout
+            android:id="@+id/framelayout_3"
+            android:layout_width="500dp"
+            android:layout_height="360dp"
+            android:layout_gravity="right|top"
+            android:visibility="invisible">
+
+            <Button
+                android:id="@+id/button_frameOff_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="5dp"
+                android:background="#00ff0000"
+                android:gravity="right|top"
+                android:text="X"
+                android:visibility="invisible" />
+
+            <!-- 위젯5 -->
+            <FrameLayout
+                android:id="@+id/framelayout_widget5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/widget5_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/rectangle" />
+
+
+                <AbsoluteLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- BMI 값 변화 -->
+                    <TextView
+                        android:id="@+id/value_bmi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_x="52dp"
+                        android:layout_y="117dp"
+                        android:text="가나다"
+                        android:textColor="#f1585e"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <!-- BMI 값 정상인지 -->
+                    <TextView
+                        android:id="@+id/value_bmi_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_x="55dp"
+                        android:layout_y="93dp"
+                        android:text="가나다"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <!-- albumin 값 변화 -->
+                    <TextView
+                        android:id="@+id/value_albumin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_x="149dp"
+                        android:layout_y="117dp"
+                        android:text="가나다"
+                        android:textColor="#f1585e"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                    <!-- albumin 값 변화인지 -->
+                    <TextView
+                        android:id="@+id/value_albumin_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_x="146dp"
+                        android:layout_y="94dp"
+                        android:text="가나다"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/nutrition_chart"
+                        android:layout_width="180dp"
+                        android:layout_height="105dp"
+                        android:layout_x="30dp"
+                        android:layout_y="212dp"
+                        android:background="#fff" />
+
+                </AbsoluteLayout>
+
+
+            </FrameLayout>
+            <!-- 위젯5 끝 -->
+
+            <!-- 위젯6 -->
+            <FrameLayout
+                android:id="@+id/framelayout_widget6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible">
+
+                <!--
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="widget6"
+                    android:textSize="30dp" />
+                -->
+
+                <ImageView
+                    android:id="@+id/widget6_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/rectangle"/>
+
+
+                <AbsoluteLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/pain_chart"
+                        android:layout_width="210dp"
+                        android:layout_height="119dp"
+                        android:layout_x="255dp"
+                        android:layout_y="80dp" />
+
+                    <!-- 환자 이름
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pain_patient_name"
+                        android:text="가나다"
+                        android:textStyle="bold"
+                        android:textSize="11dp"
+                        android:textColor="#000"
+                        android:layout_x="262dp"
+                        android:layout_y="197dp"
+                        />
+                     -->
+
+                    <!-- 통증 평균 점수 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0점"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:layout_x="399dp"
+                        android:layout_y="78dp"
+                        android:textColor="#f00"
+                        android:id="@+id/pain_painval_avg"/>
+
+                    <!-- 통증 날짜 시작 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0000-00-00"
+                        android:textSize="9dp"
+                        android:textStyle="bold"
+                        android:layout_x="255dp"
+                        android:layout_y="170dp"
+                        android:textColor="#000"
+                        android:id="@+id/pain_date_start"/>
+
+                    <!-- 통증 날짜 마지막 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0000-00-00"
+                        android:textSize="9dp"
+                        android:textStyle="bold"
+                        android:layout_x="410dp"
+                        android:layout_y="170dp"
+                        android:textColor="#000"
+                        android:id="@+id/pain_date_end"/>
+                </AbsoluteLayout>
+
+
+
+
+
+            </FrameLayout>
+            <!-- 위젯6 끝 -->
+
+        </FrameLayout>
+        <!-- 3번째 프레임 레이아웃 끝 -->
+
+        <ImageView
+            android:id="@+id/blankFrame4"
+            android:layout_width="500dp"
+            android:layout_height="360dp"
+            android:layout_gravity="right|bottom"
+            android:layerType="software"
+            android:src="@drawable/rectangle" />
+
+        <!-- 4번째 프레임 레이아웃 -->
+        <FrameLayout
+            android:id="@+id/framelayout_4"
+            android:layout_width="500dp"
+            android:layout_height="360dp"
+            android:layout_gravity="right|bottom"
+            android:visibility="invisible">
+
+            <Button
+                android:id="@+id/button_frameOff_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="5dp"
+                android:background="#00ff0000"
+                android:gravity="right|top"
+                android:text="X"
+                android:visibility="invisible" />
+
+            <!-- 위젯7 -->
+            <FrameLayout
+                android:id="@+id/framelayout_widget7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:id="@+id/widget7_img"
+                    android:src="@drawable/rectangle" />
+            </FrameLayout>
+            <!-- 위젯7 끝 -->
+
+            <!-- 위젯8 -->
+            <FrameLayout
+                android:id="@+id/framelayout_widget8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:id="@+id/widget8_img"
+                    android:src="@drawable/rectangle" />
+
+            </FrameLayout>
+            <!-- 위젯8 끝 -->
+
+        </FrameLayout>
+        <!-- 4번째 프레임 레이아웃 끝 -->
+
+    </FrameLayout>
+    <!-- 전체 레이아웃 끝 -->
+
+</FrameLayout>

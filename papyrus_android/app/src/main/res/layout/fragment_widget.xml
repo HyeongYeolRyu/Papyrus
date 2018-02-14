@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:scaleX="3"
+    android:scaleY="3">
+
+    <TableRow
+        android:gravity="center"
+        android:layout_marginBottom="5dp">
+        <!-- 위젯1 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="감염" />
+
+        <CheckBox
+            android:id="@+id/checkbox_widget1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- 위젯3 -->
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="감염관리법" />
+
+        <CheckBox
+            android:id="@+id/checkbox_widget3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- 위젯2 -->
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="             "
+            android:visibility="gone"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_widget2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:visibility="gone"/>
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:layout_marginBottom="5dp">
+
+
+        <!-- 위젯4 -->
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="             "
+            android:visibility="gone"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_widget4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:visibility="gone"/>
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:layout_marginBottom="5dp">
+
+        <!-- 위젯5 -->
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="영양" />
+
+        <CheckBox
+            android:id="@+id/checkbox_widget5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- 위젯6 -->
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="통증" />
+
+        <CheckBox
+            android:id="@+id/checkbox_widget6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableRow android:gravity="center">
+        <!-- 위젯7 -->
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="운동" />
+
+        <CheckBox
+            android:id="@+id/checkbox_widget7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- 위젯8 -->
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="영양관리" />
+
+        <CheckBox
+            android:id="@+id/checkbox_widget8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+</TableLayout>
