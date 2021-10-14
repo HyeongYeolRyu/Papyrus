@@ -4,6 +4,9 @@ Papyrus Web API
 
 * 본 프로젝트에서 사용한 database가 보안상 외부 접속이 불가하여 지정된 클라우드 환경 내에서만 사용이 가능합니다.
 
+![sum1](https://github.com/HyeongYeolRyu/Papyrus/blob/master/sum1.png)
+![sum2](https://github.com/HyeongYeolRyu/Papyrus/blob/master/sum2.png)
+
 Prerequisites
 ---------------
 
