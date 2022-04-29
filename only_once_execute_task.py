@@ -67,10 +67,10 @@ def getVariance(pains):
         return 'null'
 
 def getCursor():
-    cursor=pyodbc.connect('DRIVER={ODBC Driver 11 for SQL Server};SERVER=tcp:severancebigcon.database.windows.net;DATABASE=severancebigcon;UID=sbigcon05;PWD=P@ssw0rd;', autocommit=True, timeout=900).cursor()
+    cursor=pyodbc.connect('DRIVER={ODBC Driver 11 for SQL Server};SERVER=tcp:severancebigcon.database.windows.net;DATABASE=severancebigcon;UID='id';PWD='pw';', autocommit=True, timeout=900).cursor()
     return cursor
 
-cnxn = pyodbc.connect('DRIVER={ODBC Driver 11 for SQL Server};SERVER=tcp:severancebigcon.database.windows.net;DATABASE=severancebigcon;UID=sbigcon05;PWD=P@ssw0rd;', autocommit=True, timeout=900)
+cnxn = pyodbc.connect('DRIVER={ODBC Driver 11 for SQL Server};SERVER=tcp:severancebigcon.database.windows.net;DATABASE=severancebigcon;UID='id';PWD='pw';', autocommit=True, timeout=900)
 cursor = cnxn.cursor()
 pis=[i[0] for i in cursor.execute('select distinct PI from Time order by PI')]
 
